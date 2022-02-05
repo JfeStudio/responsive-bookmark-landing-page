@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- link native css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- logo -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Bookmark landing page</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header>
+        <div class="small-container">
+          <div class="navigation">
+            <div class="logo">
+              <img src="assets/images/logo-bookmark.svg" alt="" />
+            </div>
+            <nav
+              id="menu-navigation"
+              class="menu-navigation"
+              data-visible="false"
+            >
+              <div class="logo-mobile">
+                <img src="assets/images/logo-bookmark-mobile.svg" alt="" />
+              </div>
+              <ul class="menu">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+                <div class="btn-login">Login</div>
+              </ul>
+              <div class="social-media">
+                <li><img src="assets/images/icon-facebook.svg" alt="" /></li>
+                <li><img src="assets/images/icon-twitter.svg" alt="" /></li>
+              </div>
+            </nav>
+            <div
+              class="menu-toggle"
+              aria-controls="menu-navigation"
+              aria-expanded="false"
+            ></div>
+          </div>
+        </div>
+      </header>
+      <!-- content -->
+      <div class="content-bookmark">
+        <div class="images-circle-pill"></div>
+        <div class="small-container">
+          <div class="rows-content-bookmark">
+            <div class="cols-content-bookmark">
+              <h1 class="heading-intro">A Simple Bookmark Manager</h1>
+              <p class="text">
+                A clean and simple interface to organize your favourite
+                websites. Open a new browser tab and see your sites load
+                instantly. Try it for free.
+              </p>
+              <div class="btn-content-bookmark">
+                <button class="btn-chrome">Get it on Chrome</button>
+                <button class="btn-firefox">Get it on Firefox</button>
+              </div>
+            </div>
+            <div class="cols-content-bookmark">
+              <img
+                class="hero-images"
+                src="assets/images/illustration-hero.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- features -->
+      <div class="features">
+        <div class="images-circle-pill"></div>
+        <div class="small-container">
+          <div class="info-text-features">
+            <h1 class="format-heading">Features</h1>
+            <p class="text text-desktop">
+              Our aim is to make it quick and easy for you to access your <br />
+              favourite websites. Your bookmarks sync between your devices
+              <br />
+              so you can access them on the go.
+            </p>
+            <p class="text text-mobile">
+              Our aim is to make it quick and easy for you to access your
+              favourite websites. Your bookmarks sync between your devices so
+              you can access them on the go.
+            </p>
+          </div>
+          <!-- tabs -->
+          <div class="tabs-features">
+            <!-- create tabs -->
+            <ul class="tabs">
+              <li data-tab-target="#bookmarking" class="tab active">
+                Simple Bookmarking
+              </li>
+              <li data-tab-target="#searching" class="tab">Speedy Searching</li>
+              <li data-tab-target="#sharing" class="tab">Easy Sharing</li>
+            </ul>
+            <!-- create tab content -->
+            <div class="tab-content">
+              <div id="bookmarking" data-tab-content class="active">
+                <div class="rows-tab-content">
+                  <div class="cols-tab-content">
+                    <img
+                      class="images-features"
+                      src="assets/images/illustration-features-tab-1.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="cols-tab-content">
+                    <h2 class="heading-tab format-heading">
+                      Bookmark in one click
+                    </h2>
+                    <p class="text">
+                      Organize your bookmarks however you like. Our simple
+                      drag-and-drop interface gives you complete control over
+                      how you manage your favourite sites.
+                    </p>
+                    <div class="btn-tab-info">More Info</div>
+                  </div>
+                </div>
+              </div>
+              <div id="searching" data-tab-content>
+                <div class="rows-tab-content">
+                  <div class="cols-tab-content">
+                    <img
+                      class="images-features"
+                      src="assets/images/illustration-features-tab-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="cols-tab-content">
+                    <h2 class="heading-tab format-heading">
+                      Intelligent search
+                    </h2>
+                    <p class="text">
+                      Our powerful search feature will help you find saved sites
+                      in no time at all. No need to trawl through all of your
+                      bookmarks.
+                    </p>
+                    <div class="btn-tab-info">More Info</div>
+                  </div>
+                </div>
+              </div>
+              <div id="sharing" data-tab-content>
+                <div class="rows-tab-content">
+                  <div class="cols-tab-content">
+                    <img
+                      class="images-features"
+                      src="assets/images/illustration-features-tab-3.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="cols-tab-content">
+                    <h2 class="heading-tab format-heading">
+                      Share your bookmarks
+                    </h2>
+                    <p class="text">
+                      Easily share your bookmarks and collections with others.
+                      Create a shareable link that you can send at the click of
+                      a button.
+                    </p>
+                    <div class="btn-tab-info">More Info</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- extension -->
+      <div class="extension">
+        <div class="small-container">
+          <div class="info-text-extension">
+            <h1 class="format-heading">Download the extension</h1>
+            <p class="text text-desktop">
+              We’ve got more browsers in the pipeline. Please do let us know if
+              <br />
+              you’ve got a favourite you’d like us to prioritize.
+            </p>
+            <p class="text text-mobile">
+              We’ve got more browsers in the pipeline. Please do let us know if
+              you’ve got a favourite you’d like us to prioritize.
+            </p>
+          </div>
+          <div class="rows-extension">
+            <div class="cols-extension">
+              <img src="assets/images/logo-chrome.svg" alt="" />
+              <h4>Add to Chrome</h4>
+              <p>Minimum version 62</p>
+              <div class="small-extension">
+                <button class="btn-extension">Add & Install Extension</button>
+              </div>
+            </div>
+            <div class="cols-extension">
+              <img src="assets/images/logo-firefox.svg" alt="" />
+              <h4>Add to Firefox</h4>
+              <p>Minimum version 55</p>
+              <div class="small-extension">
+                <button class="btn-extension">Add & Install Extension</button>
+              </div>
+            </div>
+            <div class="cols-extension">
+              <img src="assets/images/logo-opera.svg" alt="" />
+              <h4>Add to Opera</h4>
+              <p>Minimum version 46</p>
+              <div class="small-extension">
+                <button class="btn-extension">Add & Install Extension</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- accordion -->
+      <div class="accordion">
+        <div class="small-container">
+          <div class="info-text-accordion">
+            <h1 class="format-heading">Frequently Asked Questions</h1>
+            <p class="text text-desktop">
+              Here are some of our FAQs. If you have any other questions <br />
+              you’d like answered please feel free to email us.
+            </p>
+            <p class="text text-mobile">
+              Here are some of our FAQs. If you have any other questions you’d
+              like answered please feel free to email us.
+            </p>
+          </div>
+          <div class="accordion">
+            <div class="box-accordion">
+              <div class="label-info">
+                <h4 class="heading-accordion">What is Bookmark?</h4>
+                <i class="bx bx-chevron-down icons"></i>
+              </div>
+              <div class="content-accordion">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  tincidunt justo eget ultricies fringilla. Phasellus blandit
+                  ipsum quis quam ornare mattis.
+                </p>
+              </div>
+            </div>
+            <div class="box-accordion">
+              <div class="label-info">
+                <h4 class="heading-accordion">
+                  How can I request a new browser?
+                </h4>
+                <i class="bx bx-chevron-down icons"></i>
+              </div>
+              <div class="content-accordion">
+                <p>
+                  Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                  massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
+                  luctus eros aliquet convallis ultricies. Mauris augue massa,
+                  ultricies non ligula. Suspendisse imperdie tVivamus luctus
+                  eros aliquet convallis ultricies. Mauris augue massa,
+                  ultricies non ligula. Suspendisse imperdiet.
+                </p>
+              </div>
+            </div>
+            <div class="box-accordion">
+              <div class="label-info">
+                <h4 class="heading-accordion">Is there a mobile app?</h4>
+                <i class="bx bx-chevron-down icons"></i>
+              </div>
+              <div class="content-accordion">
+                <p>
+                  Sed consectetur quam id neque fermentum accumsan. Praesent
+                  luctus vestibulum dolor, ut condimentum urna vulputate eget.
+                  Cras in ligula quis est pharetra mattis sit amet pharetra
+                  purus. Sed sollicitudin ex et ultricies bibendum.
+                </p>
+              </div>
+            </div>
+            <div class="box-accordion">
+              <div class="label-info">
+                <h4 class="heading-accordion">
+                  What about other Chromium browsers?
+                </h4>
+                <i class="bx bx-chevron-down icons"></i>
+              </div>
+              <div class="content-accordion">
+                <p>
+                  Integer condimentum ipsum id imperdiet finibus. Vivamus in
+                  placerat mi, at euismod dui. Aliquam vitae neque eget nisl
+                  gravida pellentesque non ut velit.
+                </p>
+              </div>
+            </div>
+            <div class="btn-accordion-info">More Info</div>
+          </div>
+        </div>
+      </div>
+      <!-- community -->
+      <div class="community">
+        <div class="small-container">
+          <div class="info-community">
+            <p class="text-community">35.000+ already joined</p>
+            <h1 class="heading-community">
+              Stay up-to-date with what <br />
+              we're doing
+            </h1>
+            <form class="form-input">
+              <input
+                type="email"
+                name="xx"
+                placeholder="Enter your email address"
+                id="name"
+              />
+              <button class="btn-contact">Contact Us</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="small-container">
+        <div class="rows-footer">
+          <div class="cols-footer">
+            <img
+              class="logo-footer"
+              src="assets/images/logo-bookmark-footer.svg"
+              alt=""
+            />
+          </div>
+          <div class="cols-footer">
+            <ul class="menu-footer">
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="cols-footer">
+            <div class="social-media">
+              <li><img src="assets/images/icon-facebook.svg" alt="" /></li>
+              <li><img src="assets/images/icon-twitter.svg" alt="" /></li>
+            </div>
+          </div>
+        </div>
+        <!-- <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">JfeStudio</a>.
+        </p> -->
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
